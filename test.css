@@ -1,4 +1,6 @@
-
+a{
+    text-decoration: none;
+}
 body{
     font-size: 30px;
     /* display:flex; */
@@ -8,6 +10,13 @@ body{
 
 body div{
     margin: 20px auto;
+}
+
+.main-icon{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    border:blue 10px solid ;
 }
 
 .oct{
