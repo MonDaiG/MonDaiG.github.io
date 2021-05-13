@@ -21,29 +21,25 @@ header h1{
 }
 
 footer{
-    background: url("img/banner.png") left bottom;
+    background: url("img/banner.png") center bottom;
     background-size: cover;
-    margin:10px 1% 0;
-    /* border-bottom: double blue 10px; */
-    width:98%;
-    height:500px;
-    /* background-attachment: fixed; */
+    height:400px;
     background-repeat: no-repeat;
 }
 
-.main-icon{
+
+/* .main-icon{
     width:200px;
     height:200px;
     border-radius: 50%;
     border:blue 10px solid ;
     background:url("img/MDGicon.jpg") center top;
     background-size: 100%;
-}
+} */
 
 .introduction{
-    width:auto;
+    width:100%;
     height:450px;
-    margin:0 10px;
 
     display:flex;
 }
@@ -58,9 +54,9 @@ footer{
 
 .sp-baloon{
     font-size: 24px;
-    width:100%;
+    border-width:97%;
     height:400px;
-    margin:25px 10px 25px 10px;
+    margin:25px 2% 25px 1%;
     padding: 15px;
     background-color: rgb(190, 245, 255);
     border-radius: 10%;
@@ -79,25 +75,25 @@ footer{
 }
 
 .link-list ul{
-    display: flex;
+    padding:0;
     width:100%;
-    flex-wrap: wrap;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .link-list img{
+    border:solid blue 3px;
     border-radius: 50%;
-    width: auto;
+    margin: 10px;
+    width: 400px;
     height: 200px;
+    /* perspective: 500px; */
 }
 .link-list img:hover{
-    opacity: 50%;
-}
+    /* opacity: 50%; */
+    transition: all 0.3s linear;
+    transform: scale(1.2);
 
-.pythoni{
-    
-}
-
-.twMDG{
-    background-color: seagreen;
 }
