@@ -50,8 +50,6 @@ footer{
     margin:25px 10px;
 }
 
-
-
 .sp-baloon{
     font-size: 24px;
     border-width:97%;
@@ -71,8 +69,44 @@ footer{
 }
 
 .tempdel{
+    /* 一時的な字消し線用の設定 */
     text-decoration: solid line-through 5px darkblue;
 }
+
+.page-list{
+    color: rgb(211, 98, 255);
+    text-shadow: rgba(255,255,255,0.8) -1px -1px 1px;
+    /* text-shadow: rgba(0,0,0,0.5) 1px 1px 1px; */
+    margin: 50px 20px;
+    padding: 5px 10px;
+    background:radial-gradient(rgb(17, 184, 226),rgb(15, 219, 168)) ;
+    border-radius: 20px;
+    border: blue double 5px;
+}
+.page-list ul{
+    padding:0;
+    width:100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.page-link{
+    color:darkred;
+    border-radius: 10%;
+    padding:20px 30px;
+    background: linear-gradient(45deg,#5ff,#08f);
+    border:double 3px darkblue;
+    text-align: center;
+}
+.page-link:hover{
+    transition:all ease-out 0.2s;
+    filter:brightness(120%);
+    transform: scale(1.1);
+}
+
+
 
 .link-list ul{
     padding:0;
