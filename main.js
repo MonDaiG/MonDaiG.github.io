@@ -8,7 +8,7 @@
     const header=document.querySelector("header");
     // P1-bfのサイズ設定
     const P1bf=document.getElementById('P1-bf');
-    P1bf.src="./img/Python1-bf.png";
+    P1bf.src="./img/python1-bf.png";
     const P1f=document.getElementById("P1-f");
     P1f.src="./img/Pythonbook1.png";
     const lcandl=document.getElementById("lcandl");
