@@ -1,0 +1,83 @@
+@charset "UTF-8";
+body {
+  height: 100vh;
+  /*横スク必須プロパティ*/
+  background-color: #100A05;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /*横スク必須プロパティ*/
+  font-size: large;
+  padding: 0;
+  margin: 0;
+}
+
+.mainbox {
+  overflow-y: hidden;
+  height: 100%;
+  position: relative;
+  background: url(img/room.png) no-repeat left bottom;
+  background-size: cover;
+}
+
+#P1-bf {
+  position: absolute;
+}
+
+#P1-f, #lcandl, #rcandl, #llight, #rlight {
+  position: absolute;
+  pointer-events: none;
+}
+
+#baloon {
+  position: absolute;
+  padding: 10px;
+  background-color: blanchedalmond;
+  color: steelblue;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+#bmask {
+  background-color: black;
+  opacity: 0.6;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+#ask-read {
+  font-size: 28px;
+  color: skyblue;
+  width: 400px;
+  margin: 0;
+  position: fixed;
+  z-index: 11;
+}
+
+#readY, #readN {
+  width: 100px;
+  height: 50px;
+  background: snow;
+  border-radius: 20px;
+  position: fixed;
+  z-index: 11;
+}
+
+#plate, #guide {
+  position: fixed;
+}
+
+#guide {
+  margin: 0;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

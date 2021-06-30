@@ -2,61 +2,28 @@
 <html>
     <head>
         <meta charaset="utf-8">
-        <title>問題Gの隠れ処</title>
-        <link rel="stylesheet" href="test.css">
-        <link rel="shortcut icon" href="favicon.png">
+        <title>test</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
     </head>
     <body>
-        <header>
-            <h1>問題Gの隠れ処</h1>
-        </header>
-        <div class="introduction">
-            <!-- <div class="main-icon"></div> -->
-            <img src="img/MDGicon.png">
-            <div class="sp-baloon">
-                <p>こんにちは！</p>
-                <p>問題Gです！</p>
-                <p>私は現在HTML/CSS,JavaScript,Pythonを勉強しながら、
-                    これらの技術的な情報をblogやtwitterなどで発信しています。
-                </p>
-                <p>このページでは私が作ったお試しWebページを<span class="tempdel">いくつか</span>紹介しているほか、
-                    私のblog,twitter,Githubアカウントを覗きに行くこともできます。
-                </p>
-                <p>興味のあるものを好きなだけご覧ください！</p>
-            </div>
-        </div>
+        <header></header>
+        <div id="main" class="mainbox">
+            <img id="P1-bf" alt="">
+            <img id="P1-f" class="hidden" alt="">
+            <img id="lcandl" alt="">
+            <img id="rcandl" alt="">
+            <img id="llight" alt="">
+            <img id="rlight" alt="">
+            <img id="plate" alt="">
+            <p id="guide">問題Gの書庫</p>
         
-        <div class="page-list">
-            ●お試しWebページ(HTML/CSSでできるこんなこと)
-            <ul>
-                <li>
-                    <a href="https://mondaig.github.io/Stack-layer/">
-                        <div class="page-link">Stack-layer</div>
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <p id="baloon">ようこそ！<br>ここは問題Gの書庫です！<br>お好きな本(ブログ)を読んでみてください！</p>
 
-        <div class="link-list">
-            <ul>
-                <li>
-                    <a href="http://blog.livedoor.jp/mon_dai_g/" target="_blank">
-                    <img src="img/pythoni.jpg">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/Mon_Dai_G" target="_blank">
-                    <img src="img/twMDG.jpg">
-                    </a>   
-                </li>
-                <li>
-                    <a href="https://github.com/MonDaiG" target="_blank">
-                    <img src="img/gitMDG.jpg">
-                    </a>   
-                </li>
-            </ul>
+            <div id="bmask" class="hidden"></div>
+            <h1 id="ask-read" class="hidden">このブログを読みますか？</h1>
+            <input id="readY" class="hidden" value="Yes" type="button">
+            <input id="readN" class="hidden" value="No" type="button">
         </div>
-        <footer>
-        </footer>
     </body>
 </html>
