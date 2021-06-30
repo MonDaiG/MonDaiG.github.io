@@ -187,7 +187,7 @@
 
     readY.onclick=()=>{
         closeDaialog();
-        location.href="https://mondaig.github.io/"
+        location.href="http://blog.livedoor.jp/mon_dai_g/"
     }
     readN.onclick=()=>{
         closeDaialog();
