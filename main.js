@@ -6,7 +6,7 @@
     const body=document.querySelector("body");
     const main=document.getElementById('main');
     const header=document.querySelector("header");
-    // P1-bfのサイズ設定
+    
     const P1bf=document.getElementById('P1-bf');
     P1bf.src="./img/python1-bf.png";
     const P1f=document.getElementById("P1-f");
@@ -39,17 +39,19 @@
     function setPosition(){
         winh=window.innerHeight;
         winw=window.innerWidth;
+        console.log("winw:winh =",winw,winh)
 
-        if(winh>1000){
-            main.style.height=1000+"px"
-            scale_rate=1.0;
-            header.style.height=winh-1000+"px"
+        // if(winh>1000){
+        //     main.style.height=1000+"px"
+        //     scale_rate=1.0;
+        //     header.style.height=winh-1000+"px"
 
-        }else{
+        // }else{
             main.style.height=winh+"px"
             scale_rate=winh/1000;
-        }
+        // }
         main.style.width=scale_rate*2000+'px';
+        // header.style.height=150*scale_rate+"px"
         
         // P1bfの位置設定
         P1bf.style.left=435*scale_rate+'px';
@@ -88,8 +90,8 @@
         guide.style.fontSize=30*scale_rate+"px"
 
         //baloonの位置設定
-        baloon.style.left=20+"px"
-        baloon.style.top=80+"px"
+        baloon.style.left=40*scale_rate+"px"
+        baloon.style.top=140*scale_rate+"px"
         baloon.style.width=330*scale_rate+"px"
         baloon.style.height=240*scale_rate+"px"
         baloon.style.fontSize=2*scale_rate+"rem"
@@ -103,7 +105,7 @@
         // readNの位置設定
         readN.style.left=winw/2+50+'px';
         readN.style.top=winh-100+'px';
-        console.log("winw:winh =",winw,winh)
+        
     }
 
 
