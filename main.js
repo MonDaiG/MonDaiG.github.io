@@ -100,14 +100,25 @@
         baloon.style.fontSize=2*scale_rate+"rem"
         
         // askreadの位置設定
-        askread.style.left=(winw-320)/2+'px';
-        askread.style.top=winh-170+'px';
+        askread.style.left=(winw-320*scale_rate)/2+'px';
+        askread.style.bottom=170*scale_rate+'px';
+        // askread.style.top=winh-170+'px';
+        askread.style.width=400*scale_rate+'px';
+        askread.style.fontSize=28*scale_rate+"px";
         // readYの位置設定
-        readY.style.left=winw/2-150+'px';
-        readY.style.top=winh-100+'px';
+        readY.style.left=winw/2-150*scale_rate+'px';
+        readY.style.bottom=100*scale_rate+'px';
+        // readY.style.top=winh-100+'px';
+        readY.style.width=100*scale_rate+'px';
+        readY.style.height=50*scale_rate+'px';
+        readY.style.fontSize=28*scale_rate+"px";
         // readNの位置設定
-        readN.style.left=winw/2+50+'px';
-        readN.style.top=winh-100+'px';
+        readN.style.left=winw/2+50*scale_rate+'px';
+        readN.style.bottom=100*scale_rate+'px';
+        // readN.style.top=winh-100+'px';
+        readN.style.width=100*scale_rate+'px';
+        readN.style.height=50*scale_rate+'px';
+        readN.style.fontSize=28*scale_rate+"px";
         
     }
 
@@ -197,6 +208,6 @@
     readN.onclick=()=>{
         closeDaialog();
     }
-
     setPosition();
+    
 }

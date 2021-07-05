@@ -56,15 +56,12 @@ body {
 #ask-read {
   font-size: 28px;
   color: skyblue;
-  width: 400px;
   margin: 0;
   position: fixed;
   z-index: 11;
 }
 
 #readY, #readN {
-  width: 100px;
-  height: 50px;
   background: snow;
   border-radius: 20px;
   position: fixed;
