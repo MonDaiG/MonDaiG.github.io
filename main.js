@@ -40,7 +40,8 @@
         winh=window.innerHeight;
         winw=window.innerWidth;
         console.log("winw:winh =",winw,winh)
-
+        console.log("windowh =",window.clientHeight,"bodyh =",body.clientHeight,"mainh =",main.clientHeight)
+    
         // if(winh>1000){
         //     main.style.height=1000+"px"
         //     scale_rate=1.0;
@@ -48,6 +49,8 @@
 
         // }else{
             main.style.height=winh+"px"
+            // body.style.height="100vh"
+            
             scale_rate=winh/1000;
         // }
         main.style.width=scale_rate*2000+'px';
@@ -194,4 +197,6 @@
     readN.onclick=()=>{
         closeDaialog();
     }
+
+    setPosition();
 }
